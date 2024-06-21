@@ -27,7 +27,7 @@ jobs:
           pip install pytest pylint
       - name: Lint code
         run: |
-          pylint --rcfile=.pylintrc 
+          pylint --rcfile=.pylintrc tests
       - name: Run tests
         run: |
           pytest tests
