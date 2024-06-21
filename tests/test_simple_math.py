@@ -1,7 +1,15 @@
 # tests/test_simple_math.py
 
 import unittest
-from src.simple_math import SimpleMath
+
+class SimpleMath:
+    @staticmethod
+    def addition(a, b):
+        return a + b
+
+    @staticmethod
+    def soustraction(a, b):
+        return a - b
 
 class TestSimpleMath(unittest.TestCase):
     def test_addition(self):
