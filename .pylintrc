@@ -1,0 +1,6 @@
+[MESSAGES CONTROL]
+# Disable the following messages:
+disable=
+    missing-module-docstring,
+    missing-class-docstring,
+    missing-function-docstring
