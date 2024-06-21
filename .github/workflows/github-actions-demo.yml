@@ -29,6 +29,8 @@ jobs:
         run: |
           pylint --rcfile=.pylintrc src
       - name: Run tests
+        env:
+          PYTHONPATH: ${{ github.workspace }}/src
         run: |
           pytest tests
       - name: Build Docker image
