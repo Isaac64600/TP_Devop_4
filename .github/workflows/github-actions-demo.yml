@@ -32,7 +32,7 @@ jobs:
         env:
           PYTHONPATH: ${{ github.workspace }}/src
         run: |
-          python tests/test_simple_math.py
+          pytest tests
       - name: Build Docker image
         run: |
           docker build -t myapp .
